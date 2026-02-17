@@ -1,7 +1,7 @@
 // utils/mongodb.js
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://v4x123:v4x123@cluster0.i3hnzcs.mongodb.net/meesho";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://v4x123:v4x123@cluster0.i3hnzcs.mongodb.net/meesho001";
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable');
@@ -45,11 +45,11 @@ async function ensureAdminExists() {
 
     // Create admin user
     const adminData = {
-      email: adminEmail,
-      password: process.env.DEFAULT_ADMIN_PASSWORD || "admin123",
-      name: process.env.DEFAULT_ADMIN_NAME || "Super Admin",
+      email: "admin011@gmail.com",
+      password: "123456",
+      name:  "Super Admin",
       role: "admin",
-      phone: process.env.DEFAULT_ADMIN_PHONE || "",
+      phone: "",
       isActive: true,
       isEmailVerified: true,
     };
